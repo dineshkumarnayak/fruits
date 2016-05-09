@@ -2,7 +2,7 @@ package com.shop;
 
 public interface Item {
 
-	int getId();
+	long getId();
 
 	int getQuantity();
 

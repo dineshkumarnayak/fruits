@@ -13,7 +13,7 @@ import com.shop.Item;
  */
 public class BasketImpl implements Basket {
 
-	private final Map<Integer, Item> items = new ConcurrentHashMap<Integer, Item>();
+	private final Map<Long, Item> items = new ConcurrentHashMap<Long, Item>();
 
 	public Basket addItem(Item item) {
 		items.put(item.getId(), item);

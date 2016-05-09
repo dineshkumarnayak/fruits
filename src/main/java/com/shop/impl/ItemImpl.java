@@ -1,6 +1,6 @@
 package com.shop.impl;
 
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
 
 import com.shop.Fruit;
 import com.shop.Item;
@@ -11,8 +11,8 @@ import com.shop.Item;
  * 
  */
 public class ItemImpl implements Item {
-	private final int id;
-	private static final AtomicInteger seq = new AtomicInteger(1);
+	private final long id;
+	private static final AtomicLong seq = new AtomicLong(1);
 	private final int quantity;
 	private final Fruit fruit;
 
@@ -23,7 +23,7 @@ public class ItemImpl implements Item {
 		this.fruit = fruit;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
